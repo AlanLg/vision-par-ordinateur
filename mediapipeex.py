@@ -16,7 +16,7 @@ while cap.isOpened():
     # print(results.pose_landmarks)
     if results.pose_landmarks:
         mp_drawing.draw_landmarks(frame, results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
-        print(results.pose_landmarks.landmark[0].x)
+        print(results.pose_landmarks.landmark[25].y)
     cv2.imshow('MediaPipe Pose', frame)
     if cv2.waitKey(10) & 0xFF == ord('q'):
         break
